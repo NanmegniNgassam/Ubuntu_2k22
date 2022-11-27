@@ -1,0 +1,1109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Tiro+Gurmukhi:ital@1&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*START GENERALS SETTINGS*/
+:root{
+    font-family:Ubuntu,'Kdam Thmor Pro';
+    box-sizing: border-box;
+    --primary-color:#F7C133;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    font-family: 'Kdam Thmor Pro';
+}
+
+
+/*END GENERALS SETTINGS*/
+
+/*START INTRO STYLING*/
+.titre_de_page{
+    font-family:'Kdam Thmor Pro' ;
+    font-size: 2rem;
+    color: #000;
+}
+
+.normal{
+    font-family: Ubuntu;
+}
+
+header{
+    position: relative;
+    z-index: 1;
+}
+
+
+.intro{
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.intro2{
+    height: 300px!important;
+}
+
+.intro .titre_de_page{
+    position: absolute;
+    top: 110px;
+    font-family: 'Kdam Thmor Pro';
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    z-index: 1;
+}
+
+.intro2 .titre_de_page{
+    top: 110px;
+}
+
+.intro .sous-titre{
+    position: absolute;
+    top: 170px;
+    font-family: 'Kdam Thmor Pro';
+    font-size: 1.6rem;
+    color: white;
+    z-index: 1;
+}
+
+.intro p.normal{
+    position: absolute;
+    top: 220px;
+    width: 800px;
+    font-family: Ubuntu;
+    font-size: 18px;
+    color: white;
+    z-index: 1;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.intro .call{
+    z-index: 1;
+}
+
+.intro .call .callToAction{
+    position: absolute;
+    top: 300px;
+    font-family: 'Kdam Thmor Pro';
+    font-size: 18px;
+    text-decoration: none;
+    width: 25%;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.intro .call a:nth-child(1){
+    color: black;
+    background-color: var(--primary-color);
+}
+
+.intro .call a:nth-child(2){
+    color: white;
+    left: 30%;
+    transition: 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.intro .call a:nth-child(2):hover{
+    background-color: var(--primary-color);
+    color: #000;
+}
+
+
+
+.intro img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.intro .blackScreen{
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 400px;
+    opacity: 40%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*END INTRO STYLING*/
+
+/*START INDEX STYLING*/
+.prize{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.prize .gift{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.prize .gift img{
+    width: 400px;
+}
+
+.prize h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*END INDEX STYLING*/
+
+/*START LOGIN STYLING*/
+form.login{
+    position: relative;
+    width: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    display: block;
+    padding: 20px 100px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+form.login h4{
+    margin-bottom: 20px;
+}
+
+form.login input{
+    display: block;
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 15px;
+}
+
+form.login input[type=text],form input[type=email]{
+    width: 100%;
+    border: 2px solid black;
+    outline: none;
+    font-family: Ubuntu;
+}
+
+form.login input[type=submit]{
+    width: 80%;
+    align-self: center;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    font-family: 'Kdam Thmor Pro';
+    font-size: 1rem;
+}
+
+form.login span{
+    color: rgb(175, 97, 2);
+}
+
+/*END LOGIN STYLING*/
+
+/*START VOTE STYLING*/
+.urnes{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.urnes p{
+    font-family: ubuntu;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.urnes form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.urnes form span{
+    display: flex;
+    gap: 10%;
+}
+
+.urnes form span span{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.urnes form span span p{
+    font-family: 'Kdam Thmor Pro';
+    font-size: 22px;
+}
+
+.urnes form span span select{
+    height: 50px;
+    font-family:'Kdam Thmor Pro';
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    border: 1px solid black;
+}
+
+form input[type=submit]{
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family:'Kdam Thmor Pro';
+    background-color: var(--primary-color);
+}
+/*END VOTE STYLING*/
+
+/*START CANDIDATES STYLING*/
+.candidats{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    padding: 10px 70px;
+    margin-bottom: 30px;
+}
+.candidats div.queen,.candidats div.king{
+    display: flex;
+    flex-direction: column;
+}
+
+.candidats div p{
+    font-family:'Kdam Thmor Pro';
+    font-size: 2rem;
+}
+
+.candidats div span.election{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: center;
+}
+
+.candidats div span.election .candidat{
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    align-items: center;
+    font-family: Ubuntu;
+}
+
+.candidats div span.election img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+/*END CANDIDATES STYLING*/
+
+/*START RESULTS STYLING*/
+.results{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    border: 1px solid black;
+    padding: 10px 0;
+    background-color: whitesmoke;
+}
+.results .titre_de_page{
+    text-align: center;
+}
+
+.results .board{
+    display: flex;
+    justify-content: space-around;
+}
+.results .board .king,.results .board .queen{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.results .board div span{
+    display: flex;
+    gap: 10px;
+}
+
+.results .board div span .fillUp{
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    position: relative;
+    right: 0;
+    overflow: hidden;
+}
+
+.results .board div span .filled{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: inherit;
+    border-right: 1px solid black;
+    background-color: var(--primary-color);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+.box a{
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro';
+    font-size: 1.4rem;
+    color: black;
+    background-color: var(--primary-color);
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid black;
+}
+
+/*END RESULTS STYLING*/
+
+    @media screen and (max-width:1000px) {
+        .intro p.normal{
+            width: 700px;
+        }
+
+        .intro2{
+            height: 200px!important;
+        }
+        /*START CANDIDATES STYLING*/
+        .candidats div p{
+            font-size: 1.4rem;
+        }
+        .candidats div span.election{
+            grid-template-columns: 30% 30% 30% ;
+            justify-content: center;
+            grid-row-gap: 10px;
+        }
+        .candidats div span.election .candidat:nth-child(4),.candidats div span.election .candidat:nth-child(5){
+            width: 200%;
+        }        
+        .candidats div span.election img{
+            width: 150px;
+            height: 150px;
+        }
+        /*END CANDIDATES STYLING*/
+
+        /*START RESULTS STYLING*/
+        .results .titre_de_page{
+            font-size: 1.6rem;
+        }
+        .results h3{
+            text-align: center;
+        }
+        .results .board div span .fillUp{
+            height: 18px;
+        }
+        .box a{
+            font-size: 1.2rem;
+            width: 350px;
+            height: 48px;
+        }
+        
+        /*END RESULTS STYLING*/
+    }
+
+    @media screen and (max-width:800px) {
+        /*START GENERAL STYLING*/
+        .intro{
+            height: 300px;
+        }
+        
+        .intro .titre_de_page{
+            font-size: 1.8rem;
+            top: 80px;
+        }
+
+        .intro .sous-titre{
+            font-size: 1.4rem;
+            top: 130px;
+        }
+
+        .intro p.normal{
+            width: 550px;
+            font-size: 1rem;
+            top: 170px;
+        }
+        .intro .call .callToAction{
+            top:250px;
+            height:35px;
+            width: 200px;
+            line-height: 35px;
+            font-size: 1rem;
+        }
+
+        .intro .call a:nth-child(2){
+            left: 300px;
+        }
+
+        .intro .blackScreen{
+            height: 300px;
+        }
+
+        /*END GENERAL STYLING*/
+
+        /*START INDEX STYLING*/
+        .prize h2{
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        .prize .gift img{
+            width: 350px;
+        }
+        .prize .gift span{
+            font-size: 0.8rem;
+        }
+        /*END INDEX STYLING*/
+
+        /*START LOGIN STYLING*/
+
+        form.login{
+            padding: 10px 60px;
+        }
+        form.login h4{
+            margin-bottom: 5px;
+        }
+        form.login input{
+            margin-top: 10px;
+        }
+
+        form.login span{
+            font-size: 14px;
+        }
+
+        /*END LOGIN STYLING*/
+
+        /*START VOTE STYLING*/
+
+        .urnes  p{
+            font-size: 1rem;
+        }
+        .urnes form span {
+            gap: 10px;
+        }
+        .urnes form span span select{
+            width: 220px;
+            font-size: 0.79rem;
+            height: 40px;
+        }
+        .urnes form input{
+            height: 35px;
+        }
+
+        /*END VOTE STYLING*/
+
+        /*START CANDIDATES STYLING*/
+        .candidats{
+            gap: 20px;
+            padding: 0px 50px;
+            margin-bottom: 20px;
+        }
+        .candidats div span.election{
+            grid-template-columns: 33% 33% 33% ;
+        }   
+        .candidats div span.election .candidat span{
+            font-size: 0.9rem;
+        }  
+        .candidats div span.election img{
+            width: 140px;
+            height: 140px;
+        }
+        /*END CANDIDATES STYLING*/
+
+        /*START RESULTS STYLING*/
+        .results{
+            background-color: whitesmoke;
+        }
+        .results .titre_de_page{
+            font-size: 1.4rem;
+        }
+        .results .board{
+            flex-direction: column;
+            align-items: center;
+        }
+        .results .board .king .candidat{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 450px;
+            font-size: 16px;
+        }
+        /*END RESULTS STYLING*/
+    }
+
+    @media screen and (max-width:600px) {
+        /*START GENERAL STYLING*/
+        .intro{
+            height: 225px;
+        }
+        .intro2{
+            height: 150px!important;
+        }
+        .intro .titre_de_page{
+            font-size: 1.6rem;
+            top: 45px;
+        }
+        .intro .sous-titre{
+            font-size: 1.1rem;
+            top: 85px;
+        }
+
+        .intro2 .sous-titre{
+            font-size: 1rem!important;
+        }
+        .intro p.normal{
+            width: 90%;
+            font-size: 0.8rem;
+            top: 125px;
+        }
+        .intro .call .callToAction{
+            top:195px;
+            height:25px;
+            line-height: 25px;
+            border: 1px solid var(--primary-color);
+            font-size: 0.9rem;
+            width: 40%;
+            gap: 50px;
+        }
+        .intro .call a:nth-child(2){
+            left: 50%;
+        }
+
+        /*END GENERAL STYLING*/
+
+        /*START INDEX STYLING*/
+        .prize h2{
+            font-size: 1.1rem;
+        }
+
+        .prize .gift img{
+            width: 300px;
+        }
+        /*END INDEX STYLING*/
+
+        /*START LOGIN STYLING*/
+        form.login{
+            width: 60%;
+            border: none;
+            padding: 10px 60px;
+        }
+        form.login h4{
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        form.login input{
+            margin-top: 10px;
+            height: 30px;
+        }
+
+        form.login span{
+            font-size: 14px;
+        }
+        /*END LOGIN STYLING*/
+
+        /*START VOTE STYLING*/
+        .urnes  p{
+            font-size: 0.8rem;
+        }
+        .urnes form{
+            gap: 10px;
+            width: 120%;
+        }
+        .urnes form span {
+            gap: 10px;
+        }
+        .urnes form span span p{
+            font-size: 1rem;
+        }
+        .urnes form span span select{
+            width: 180px;
+            font-size: 0.59rem;
+            height: 30px;
+        }
+        .urnes form input{
+            height: 30px;
+            width: 200px;
+            border: 1px solid black;
+            font-size: 0.59rem;
+        }
+
+        /*END VOTE STYLING*/
+
+        /*START CANDIDATES STYLING*/
+        .candidats{
+            gap: 20px;
+            padding: 0px 50px;
+            margin-bottom: 20px;
+        }
+        .candidats div span.election{
+            grid-template-columns: 50% 50%;
+        }   
+        .candidats div span.election .candidat:nth-child(4){
+            width: 100%;
+        }
+        .candidats div span.election .candidat:nth-child(5){
+            width: 200%;
+        }   
+        .candidats div span.election .candidat span{
+            font-size: 0.9rem;
+        }  
+        .candidats div span.election img{
+            width: 150px;
+            height: 150px;
+        }
+        /*END CANDIDATES STYLING*/
+
+        /*START RESULTS STYLING*/
+        .results{
+            width: 90%;
+            margin-left: 5%;
+        }
+        .results .titre_de_page{
+            font-size: 1.2rem;
+        }
+        .results .board{
+            gap: 20px;
+        }
+        .results .board .king .candidat{
+            width: 350px;
+            font-size: 14px;
+        }
+        .results .board .king .candidat .fillUp{
+            height: 12px;
+        }
+        .box a{
+            font-size: 1rem;
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+        }
+        /*END RESULTS STYLING*/
+
+    }
+
+    @media screen and (max-width:400px) {
+        /*START GENERAL STYLING*/
+        .intro{
+            height: 165px;
+            margin-bottom: 10px;
+            padding-left:2px ;
+            padding-right:0 ;
+        }
+        .intro2{
+            height: 120px!important;
+        }
+        .intro .titre_de_page{
+            font-size: 1.1rem;
+            top: 20px;
+        }
+        .intro2 .titre_de_page{
+            top: 40px!important;
+        }
+        .intro .sous-titre{
+            font-size: 0.8rem;
+            top: 45px;
+        }
+        .intro2 .sous-titre{
+            font-size: 0.75rem!important;
+            top: 65px!important;
+        }
+        .intro p.normal{
+            font-size: 0.7rem;
+            top: 70px;
+        }
+        .intro .call .callToAction{
+            height: 20px;
+            line-height: 20px;
+            font-size: 0.8rem;
+            top: 140px;
+            font-size: 0.7rem;
+        }
+        .intro .blackScreen{
+            height: 250px;
+        }
+        /*END GENERAL STYLING*/
+
+        /*START INDEX STYLING*/
+        .prize .gift img{
+            width: 250px;
+        }
+        /*END INDEX STYLING*/
+
+        /*START LOGIN STYLING*/
+        form.login input[type=text],input[type=email]{
+            font-size: 14px;
+        }
+        form.login input[type=submit]{
+            font-size: 14px;
+        }
+        /*END LOGIN STYLING*/
+
+        /*START VOTE STYLING*/
+        .urnes form{
+            width: 100%;
+        }
+        .urnes form span{
+            flex-direction: column;
+            gap: 5px;
+        }
+        .urnes form span span p{
+            font-size: 0.8rem;
+            text-align: left;
+        }
+        .urnes form span span select{
+            width: 100%;
+        }
+        .urnes form input{
+            width: 200px;
+            height: 25px;
+        }
+        /*END VOTE STYLING*/
+
+        /*START CANDIDATES STYLING*/
+        .candidats{
+            gap: 20px;
+            padding: 0px 70px;
+        }
+        .candidats div p{
+            text-align: center;
+            font-size: 1rem;
+        }
+        .candidats div span.election{
+            grid-template-columns: 100%;
+        }   
+        .candidats div span.election .candidat:nth-child(5){
+            width: 100%;
+        }   
+        .candidats div span.election .candidat span{
+            font-size: 0.7rem;
+        }  
+        .candidats div span.election img{
+            width: 140px;
+            height: 140px;
+        }
+        /*END CANDIDATES STYLING*/
+
+        /*START RESULTS STYLING*/
+        .results{
+            width: 98%;
+            margin-left: 0;
+        }
+        .results .titre_de_page{
+            font-size: 1.2rem;
+        }
+        .results .board{
+            gap: 20px;
+        }
+        .results .board .king .candidat{
+            padding: 0 10px;
+            width: 290px;
+            font-size: 12px;
+            align-items: center;
+        }
+        .results .board .king .candidat .fillUp{
+            height: 12px;
+            width: 80px;
+        }
+        .box a{
+            font-size: 0.9rem;
+            width: 200px;
+            height: 35px;
+            line-height: 35px;
+        }
+        /*END RESULTS STYLING*/
+    }
+
+    @media screen and (max-width:300px) {
+        /*START GENERAL STYLING*/
+        .intro{
+            height: 135px
+        }
+        .intro .titre_de_page{
+            font-size: 1.05rem;
+            top: 20px;
+        }
+        .intro .sous-titre{
+            font-size: 0.75rem;
+            top: 40px;
+        }
+        .intro2 .sous-titre{
+            font-size: 0.6rem;
+            top: 70px!important;
+        }
+        .intro p.normal{
+            width: 95%;
+            font-size: 0.55rem;
+            top: 60px;
+        }
+        .intro .call .callToAction{
+            width: 45%;
+            height: 14px;
+            line-height: 14px;
+            font-size: 0.5rem;
+            top: 115px;
+        }
+        .intro .blackScreen{
+            height: 188px;
+        }
+        /*END GENERAL STYLING*/
+
+        /*START INDEX STYLING*/
+        .prize{
+            gap: 2px;
+        }
+        .prize .gift img{
+            width: 200px;
+        }
+        .prize .gift span{
+            font-size: 10px;
+        }
+        /*END INDEX STYLING*/
+
+        /*START LOGIN STYLING*/
+        form.login{
+            width: 75%;
+        }
+        form.login input{
+            height: 25px;
+        }
+        form.login span{
+            font-size: 12px;
+        }
+        /*END LOGIN STYLING*/
+
+        /*START VOTING STYLING*/
+        .urnes p{
+            font-size: 0.7rem;
+        }
+        .urnes form span span p{
+            font-size: 0.8rem;
+        }
+        .urnes form span span select{
+            font-size: 0.5rem;
+        }
+        .urnes form input{
+            width: 150px;
+            height: 20px;
+        }
+        /*END VOTING STYLING*/
+
+        /*START CANDIDATS STYLING*/
+        .candidats div p{
+            font-size: 1.2rem;
+        }
+        /*END CANDIDATS STYLING*/
+
+        /*START RESULTS STYLING*/
+        .results{
+            width: 98%;
+            margin-left: 0;
+        }
+        .results .titre_de_page{
+            font-size: 1.1rem;
+        }
+        .results h3{
+            font-size: 14px;
+        }
+        .results .board .king .candidat{
+            padding: 0 10px;
+            width: 230px;
+            font-size: 12px;
+        }
+        .results .board .king .candidat .fillUp{
+            height: 8px;
+            width: 60px;
+        }
+        .box a{
+            font-size: 0.8rem;
+            width: 180px;
+            height: 30px;
+            line-height: 30px;
+        }
+        /*END RESULTS STYLING*/
+    }
+
+    @media screen and (max-width:240px) {
+        /*START GENERAL STYLING*/
+        .intro{
+            height: 112px;
+            margin-bottom: -5px;
+        }
+        .intro2{
+            height: 100px!important;
+        }
+        .intro .titre_de_page{
+            font-size: 0.8rem;
+            top: 10px;
+        }
+        .intro2 .titre_de_page{
+            top: 20px!important;
+        }
+        .intro .sous-titre{
+            font-size: 0.6rem;
+            top: 30px;
+        }
+        .intro2 .sous-titre{
+            top: 50px!important;
+            font-size: 0.5rem!important;
+        }
+        .intro p.normal{
+            font-size: 0.45rem;
+            top: 50px;
+            width: 95%;
+        }
+        .intro .call .callToAction{
+            width: 45%;
+            height: 12px;
+            line-height: 12px;
+            font-size: 0.5rem;
+            top: 97px;
+        }
+        .intro .blackScreen{
+            height: 150px;
+        }
+        /*END GENERAL STYLING*/
+
+        /*START INDEX STYLING*/
+        .prize{
+            gap: 0px;
+        }
+        .prize h2{
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        .prize .gift{
+            gap: 0;
+        }
+        .prize .gift img{
+            width: 150px;
+        }
+        .prize .gift span{
+            font-size: 10px;
+        }
+        /*END INDEX STYLING*/
+
+        /*START LOGIN STYLING*/
+        form.login{
+            width: 70%;
+        }
+        form.login h4{
+            font-size: 14px;
+        }
+        form.login input{
+            height: 20px;
+            line-height: 20px;
+        }
+        form.login span{
+            font-size: 10px;
+        }
+        /*END LOGIN STYLING*/
+
+        /*START VOTING STYLING*/
+        .urnes{
+            gap: 5px;
+        }
+        .urnes p{
+            font-size: 0.6rem;
+            margin-top: 20px;
+        }
+        .urnes form{
+            border: none;
+        }
+        .urnes form span span{
+            margin-top: -15px;
+            font-size: 0.8rem;
+            gap: 0;
+        }
+        .urnes form span span select{
+            font-size: 0.5rem;
+            margin-top: 0px;
+            height: 20px;
+        }
+        .urnes form input{
+            width: 150px;
+            height: 20px;
+        }
+        /*END VOTING STYLING*/
+
+        /*START CANDIDATES STYLING*/
+        .candidats{
+            gap: 20px;
+            padding: 0px 70px;
+        }
+        .candidats div p{
+            text-align: center;
+            font-size: 0.8rem;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .candidats div span.election{
+            width: 100%;
+        }
+        .candidats div span.election .candidat span{
+            font-size: 0.5rem;
+            text-align: center;
+            width: 100%;
+        }  
+        .candidats div span.election img{
+            width: 100px;
+            height: 100px;
+        }
+        /*END CANDIDATES STYLING*/
+
+        /*START RESULTS STYLING*/
+        .results{
+            width: 96%;
+            margin-left: 2%;
+        }
+        .results .titre_de_page{
+            font-size: 1rem;
+        }
+        .results h3{
+            font-size: 13px;
+        }
+        .results .board .king .candidat{
+            padding: 0 10px;
+            width: 190px;
+            font-size: 10px;
+        }
+        .results .board .king .candidat .fillUp{
+            height: 5px;
+            width: 60px;
+        }
+        .box a{
+            font-size: 0.7rem;
+            width: 150px;
+            height: 25px;
+            line-height: 25px;
+        }
+        /*END RESULTS STYLING*/
+    }
